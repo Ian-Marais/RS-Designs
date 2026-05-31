@@ -1366,12 +1366,58 @@ body.dark-mode .latest-work p {
 }
 
 .footer-bottom {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
   text-align: center;
   padding-top: 10px;
   margin-top: 10px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 0.85rem;
   opacity: 0.7;
+}
+.footer-bottom p {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  white-space: nowrap;
+}
+.footer-link-block {
+  display: inline-flex;
+  align-items: center;
+  order: 2;
+}
+.footer-link-text {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  white-space: nowrap;
+  margin-right: 8px;
+}
+.footer-logo-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-logo-frame {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+}
+.footer-logo-img {
+  width: 20px;
+  max-width: 100%;
+  max-height: 20px;
+  height: auto;
+  display: block;
 }
 
 /* ---------- Scroll Buttons (Top & Bottom) ---------- */
